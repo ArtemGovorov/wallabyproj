@@ -1,10 +1,12 @@
 ﻿module.exports = function (w) {
     return {
         files: [
-            'src/**/*.ts'
+            'src/**/*.ts',
+            'tests/**/*.ts',
+            '!tests/**/*Tests.ts'
         ],
         tests: [
-            'tests/**/*.ts'
+            'tests/**/*Tests.ts'
         ]
         ,
         compilers: {
